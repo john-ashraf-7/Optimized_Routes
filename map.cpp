@@ -72,7 +72,6 @@ vector<int> Map::ShortestPath_Dijkstra(int src, int dest) //minheap implementati
     }
     reverse(path.begin(), path.end());
     return path;
-
 }
 
 //DP Approach
@@ -99,13 +98,12 @@ vector<int> Map::ShortestPath_BellmanFord(int src, int dest)
         }
     }
 
-    //one more iteration to detect negative cycles. (functionality disabled to prevent excessive complexity)
     bool foundnegcycle=false;
     for(int u=0;u<V;u++)
         {
             for(int v=0;v<V;v++)
             {
-                if(adjMatrix[u][v] + distances[u] < distances[v])
+                if(adjMatrix[u][v]!=0 && adjMatrix[u][v] + distances[u] < distances[v])
                 {
                     cout << "NEGATIVE CYCLE\n";
                     foundnegcycle=true;
