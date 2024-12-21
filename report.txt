@@ -1,7 +1,0 @@
-The Project intensively compares the adjmatrix implementations of 3 different shortest path algorithms
-Dijkstra, Bellmanford, and A star
-and calculates the execution time for each.
-It is implemented in OOP to simulate the project delivery routes prompt
-So we have drivers, and maps.
-Each driver can be given any map, any src and destination, then he should be able to find the shortest distance to there. using 3 different algorithms
-and also determine which algorithm is more efficient.
